@@ -1,10 +1,3 @@
-const initialState = {
-  query: "",
-  list: [
-    {},
-    {},
-    {} 
-  ]
+export default {
+  books: []
 }
-
-export default initialState;

@@ -1,9 +1,9 @@
 import "./SearchField.css"
 
-function SearchField(){
+function SearchField(props){
   return(
     <form id="search" action="" method="get">
-      <input id="search__field" name="search" placeholder="Начните набирать название книги..." type="search" autoComplete="off"/>
+      <input id="search__field" name="search" placeholder="Начните набирать название книги..." type="search" autoComplete="off" onChange={(e) => {props.searchByQuery(e.target.value.replace(/ /g, "+"))}}/>
       <button id="search__button" type="submit">Искать</button>
     </form>
   );

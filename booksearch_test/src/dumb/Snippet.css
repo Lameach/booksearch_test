@@ -1,19 +1,26 @@
 .snippet {
   display: flex;
-  justify-content: center;
-  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3em;
   max-width: 500px;
 }
 
 .snippet__text {
   font: Roboto Light;
   font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin:20px;
 }
 
 #author {
   color: lightgray;
+  margin: 0;
 }
 
 #title {
   font-style: bold;
+  margin: 0;
 }
