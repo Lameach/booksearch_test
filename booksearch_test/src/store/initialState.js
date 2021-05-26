@@ -1,3 +1,11 @@
 export default {
-  books: []
+  books: [],
+  bookModal: {
+    cover: {},
+    title: "...",
+    authors: "...",
+    publish_date: "...",
+    publishers: "...",
+    identifiers: {}
+  }
 }

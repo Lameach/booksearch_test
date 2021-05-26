@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import store from '../store/store'
 import SearchFieldWrapped from '../dumb/SearchFieldWrapped';
 import SnippetListWrapped from './SnippetListWrapped';
+import Modal from '../dumb/Modal';
 
 function App() {
   return (

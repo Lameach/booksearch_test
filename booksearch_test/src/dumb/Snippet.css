@@ -4,6 +4,14 @@
   align-items: center;
   margin-left: 3em;
   max-width: 500px;
+  cursor: pointer;
+}
+
+.snippet__cover {
+  min-width: 35px;
+  min-height: 58px;
+  background-image: url("../placehold_s.png");
+  background-repeat: no-repeat;
 }
 
 .snippet__text {

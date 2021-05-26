@@ -9,13 +9,13 @@ function search(value) {
 }
 
 function searchAsync(query) {
-    return (dispatch) => {
-      setTimeout(() => {
-        axios.get("http://openlibrary.org/search.json?title=" + query).then(res => {
-            dispatch(search(res.data.docs))
-        })
-      }, 1000);
-    }
+  return (dispatch) => {
+    setTimeout(() => {
+      axios.get("http://openlibrary.org/search.json?title=" + query).then(res => {
+        dispatch(search(res.data.docs))
+      })
+    }, 1000);
+  }
 }
 
 export default searchAsync;
